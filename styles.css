@@ -407,18 +407,51 @@ select:focus-visible {
 
 /* Category-specific badge colors */
 .service-card[data-category="internet"] .category-badge {
-    background-color: rgba(59, 130, 246, 0.15);
-    color: var(--color-internet);
+    background-color: rgba(59, 130, 246, 0.12);
+    color: #1d4ed8;
 }
 
 .service-card[data-category="phone"] .category-badge {
-    background-color: rgba(139, 92, 246, 0.15);
-    color: var(--color-phone);
+    background-color: rgba(139, 92, 246, 0.12);
+    color: #6d28d9;
 }
 
 .service-card[data-category="utilities"] .category-badge {
-    background-color: rgba(16, 185, 129, 0.15);
-    color: var(--color-utilities);
+    background-color: rgba(16, 185, 129, 0.12);
+    color: #047857;
+}
+
+/* Dark mode category badge colors */
+body.dark-mode .service-card[data-category="internet"] .category-badge {
+    background-color: rgba(96, 165, 250, 0.15);
+    color: #93c5fd;
+}
+
+body.dark-mode .service-card[data-category="phone"] .category-badge {
+    background-color: rgba(167, 139, 250, 0.15);
+    color: #c4b5fd;
+}
+
+body.dark-mode .service-card[data-category="utilities"] .category-badge {
+    background-color: rgba(52, 211, 153, 0.15);
+    color: #6ee7b7;
+}
+
+@media (prefers-color-scheme: dark) {
+    .service-card[data-category="internet"] .category-badge {
+        background-color: rgba(96, 165, 250, 0.15);
+        color: #93c5fd;
+    }
+    
+    .service-card[data-category="phone"] .category-badge {
+        background-color: rgba(167, 139, 250, 0.15);
+        color: #c4b5fd;
+    }
+    
+    .service-card[data-category="utilities"] .category-badge {
+        background-color: rgba(52, 211, 153, 0.15);
+        color: #6ee7b7;
+    }
 }
 
 .price-section {
