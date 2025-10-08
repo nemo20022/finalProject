@@ -24,12 +24,13 @@ A responsive, vanilla HTML/CSS/JS website for comparing community services and p
 - Express.js server (serves static files on port 5000)
 
 ## Design Specifications
-- Color palette: Monochrome dark
+- Color palette: Subtle color accents (indigo primary, blue/purple/green category colors)
 - Typography: Modern geometric sans-serif
 - Spacing: Balanced and modular
 - Buttons: Rounded soft edges
 - Layout: Card-based
 - Motion: Smooth and subtle transitions
+- Accessibility: WCAG AA compliant (4.5:1+ contrast ratios)
 
 ## Project Structure
 - `index.html` - Semantic HTML structure
@@ -45,6 +46,9 @@ A responsive, vanilla HTML/CSS/JS website for comparing community services and p
 - Fixed mobile navigation visibility issues
 - Added aria-pressed state to theme toggle for accessibility
 - Configured Express server on port 5000
+- Added subtle color accents (indigo primary, category-specific colors)
+- Implemented accessible color scheme meeting WCAG AA standards (4.5:1+ contrast)
+- Category badges now display with blue (Internet), purple (Phone), and green (Utilities) colors
 
 ## User Preferences
 - No frameworks or libraries (pure HTML/CSS/JS as specified)
