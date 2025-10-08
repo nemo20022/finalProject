@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compare community services and pricing in an intuitive way">
+    <title>Community Service Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-logo">ServiceCompare</h1>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#compare">Compare</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                    <button id="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Compare Community Services</h2>
+                <p class="hero-subheading">Find the best service for your needs with transparent pricing and feature comparison</p>
+                <a href="#services" class="cta-button">Explore Services</a>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Available Services</h3>
+                    <div class="filter-controls">
+                        <label for="category-filter" class="visually-hidden">Filter by category</label>
+                        <select id="category-filter" aria-label="Filter services by category">
+                            <option value="all">All Categories</option>
+                            <option value="internet">Internet</option>
+                            <option value="phone">Phone</option>
+                            <option value="utilities">Utilities</option>
+                        </select>
+                        <label for="sort-filter" class="visually-hidden">Sort by</label>
+                        <select id="sort-filter" aria-label="Sort services">
+                            <option value="name">Name</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="services-grid" id="services-grid">
+                    <article class="service-card" data-category="internet" data-price="49.99">
+                        <div class="card-header">
+                            <h4>FiberNet Plus</h4>
+                            <span class="category-badge">Internet</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$49.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="features-list">
+                            <li>500 Mbps download speed</li>
+                            <li>Unlimited data</li>
+                            <li>Free router included</li>
+                            <li>24/7 customer support</li>
+                            <li>No contract required</li>
+                        </ul>
+                        <button class="select-button">Select Plan</button>
+                    </article>
+
+                    <article class="service-card" data-category="internet" data-price="79.99">
+                        <div class="card-header">
+                            <h4>GigaSpeed Pro</h4>
+                            <span class="category-badge">Internet</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$79.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="features-list">
+                            <li>1 Gbps download speed</li>
+                            <li>Unlimited data</li>
+                            <li>Premium router included</li>
+                            <li>Priority support</li>
+                            <li>Static IP available</li>
+                        </ul>
+                        <button class="select-button">Select Plan</button>
+                    </article>
+
+                    <article class="service-card" data-category="phone" data-price="35.00">
+                        <div class="card-header">
+                            <h4>TalkMore Basic</h4>
+                            <span class="category-badge">Phone</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$35.00</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="features-list">
+                            <li>Unlimited local calls</li>
+                            <li>500 long distance minutes</li>
+                            <li>Voicemail included</li>
+                            <li>Call waiting & caller ID</li>
+                            <li>Free phone line setup</li>
+                        </ul>
+                        <button class="select-button">Select Plan</button>
+                    </article>
+
+                    <article class="service-card" data-category="phone" data-price="55.00">
+                        <div class="card-header">
+                            <h4>TalkMore Premium</h4>
+                            <span class="category-badge">Phone</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$55.00</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="features-list">
+                            <li>Unlimited local & long distance</li>
+                            <li>International calling (50 countries)</li>
+                            <li>Advanced voicemail</li>
+                            <li>Call screening</li>
+                            <li>Mobile app access</li>
+                        </ul>
+                        <button class="select-button">Select Plan</button>
+                    </article>
+
+                    <article class="service-card" data-category="utilities" data-price="89.00">
+                        <div class="card-header">
+                            <h4>PowerSave Standard</h4>
+                            <span class="category-badge">Utilities</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$89.00</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="features-list">
+                            <li>Standard electricity rate</li>
+                            <li>Online account management</li>
+                            <li>Paperless billing</li>
+                            <li>Usage monitoring tools</li>
+                            <li>Emergency support</li>
+                        </ul>
+                        <button class="select-button">Select Plan</button>
+                    </article>
+
+                    <article class="service-card" data-category="utilities" data-price="99.00">
+                        <div class="card-header">
+                            <h4>PowerSave Green</h4>
+                            <span class="category-badge">Utilities</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$99.00</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="features-list">
+                            <li>100% renewable energy</li>
+                            <li>Carbon offset program</li>
+                            <li>Smart meter included</li>
+                            <li>Energy efficiency rebates</li>
+                            <li>Priority green support</li>
+                        </ul>
+                        <button class="select-button">Select Plan</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="compare" class="comparison-info">
+            <div class="container">
+                <h3>How to Compare</h3>
+                <p>Use the filters above to narrow down services by category, then sort by price to find the best deal for your needs. Each service card shows transparent pricing and all included features.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ServiceCompare. All rights reserved.</p>
+            <nav>
+                <ul class="footer-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
