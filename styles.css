@@ -7,17 +7,22 @@
 
 /* CSS Variables */
 :root {
-    /* Color palette - Monochrome Dark */
+    /* Color palette - Subtle Color Accents */
     --color-bg-primary: #ffffff;
     --color-bg-secondary: #f5f5f5;
     --color-bg-card: #fafafa;
     --color-text-primary: #1a1a1a;
     --color-text-secondary: #4a4a4a;
     --color-text-tertiary: #6a6a6a;
-    --color-accent: #2a2a2a;
-    --color-accent-hover: #000000;
+    --color-accent: #4f46e5;
+    --color-accent-hover: #4338ca;
     --color-border: #e0e0e0;
     --color-border-hover: #c0c0c0;
+    
+    /* Category colors */
+    --color-internet: #3b82f6;
+    --color-phone: #8b5cf6;
+    --color-utilities: #10b981;
     
     /* Typography - Modern Geometric */
     --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
@@ -54,10 +59,15 @@
         --color-text-primary: #f5f5f5;
         --color-text-secondary: #d0d0d0;
         --color-text-tertiary: #a0a0a0;
-        --color-accent: #f5f5f5;
-        --color-accent-hover: #ffffff;
+        --color-accent: #6366f1;
+        --color-accent-hover: #818cf8;
         --color-border: #404040;
         --color-border-hover: #606060;
+        
+        /* Category colors for dark mode */
+        --color-internet: #60a5fa;
+        --color-phone: #a78bfa;
+        --color-utilities: #34d399;
     }
 }
 
@@ -69,10 +79,15 @@ body.dark-mode {
     --color-text-primary: #f5f5f5;
     --color-text-secondary: #d0d0d0;
     --color-text-tertiary: #a0a0a0;
-    --color-accent: #f5f5f5;
-    --color-accent-hover: #ffffff;
+    --color-accent: #6366f1;
+    --color-accent-hover: #818cf8;
     --color-border: #404040;
     --color-border-hover: #606060;
+    
+    /* Category colors for dark mode */
+    --color-internet: #60a5fa;
+    --color-phone: #a78bfa;
+    --color-utilities: #34d399;
 }
 
 body.light-mode {
@@ -82,10 +97,15 @@ body.light-mode {
     --color-text-primary: #1a1a1a;
     --color-text-secondary: #4a4a4a;
     --color-text-tertiary: #6a6a6a;
-    --color-accent: #2a2a2a;
-    --color-accent-hover: #000000;
+    --color-accent: #4f46e5;
+    --color-accent-hover: #4338ca;
     --color-border: #e0e0e0;
     --color-border-hover: #c0c0c0;
+    
+    /* Category colors */
+    --color-internet: #3b82f6;
+    --color-phone: #8b5cf6;
+    --color-utilities: #10b981;
 }
 
 /* Base styles */
@@ -348,6 +368,21 @@ select:focus-visible {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
+.service-card[data-category="internet"]:hover {
+    border-color: var(--color-internet);
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
+}
+
+.service-card[data-category="phone"]:hover {
+    border-color: var(--color-phone);
+    box-shadow: 0 12px 24px rgba(139, 92, 246, 0.15);
+}
+
+.service-card[data-category="utilities"]:hover {
+    border-color: var(--color-utilities);
+    box-shadow: 0 12px 24px rgba(16, 185, 129, 0.15);
+}
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -368,6 +403,22 @@ select:focus-visible {
     border-radius: var(--border-radius-sm);
     color: var(--color-text-secondary);
     white-space: nowrap;
+}
+
+/* Category-specific badge colors */
+.service-card[data-category="internet"] .category-badge {
+    background-color: rgba(59, 130, 246, 0.15);
+    color: var(--color-internet);
+}
+
+.service-card[data-category="phone"] .category-badge {
+    background-color: rgba(139, 92, 246, 0.15);
+    color: var(--color-phone);
+}
+
+.service-card[data-category="utilities"] .category-badge {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: var(--color-utilities);
 }
 
 .price-section {
