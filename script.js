@@ -13,6 +13,15 @@ function initTheme() {
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         body.classList.add(prefersDark ? 'dark-mode' : 'light-mode');
     }
+    
+    // Set initial aria-pressed state
+    updateAriaPressed();
+}
+
+// Update aria-pressed attribute
+function updateAriaPressed() {
+    const isDarkMode = body.classList.contains('dark-mode');
+    themeToggle.setAttribute('aria-pressed', isDarkMode);
 }
 
 // Toggle theme and save preference
@@ -26,6 +35,9 @@ themeToggle.addEventListener('click', () => {
         body.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark-mode');
     }
+    
+    // Update aria-pressed state
+    updateAriaPressed();
 });
 
 // Initialize theme on page load

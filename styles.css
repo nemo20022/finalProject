@@ -489,7 +489,7 @@ footer p {
 /* Mobile-first responsive adjustments */
 @media (max-width: 768px) {
     .nav-list {
-        display: none;
+        gap: var(--space-md);
     }
     
     .section-header {
@@ -515,6 +515,17 @@ footer p {
 @media (max-width: 480px) {
     .header-content {
         flex-direction: row;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: var(--space-xs);
+        align-items: flex-end;
     }
     
     .filter-controls {
