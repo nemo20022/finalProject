@@ -12,11 +12,15 @@
         <div class="container">
             <div class="header-content">
                 <h1 class="site-logo">ServiceCompare</h1>
-                <nav>
+                <button id="menu-toggle" aria-label="Toggle navigation">
+                ☰
+                </button>
+                <nav id="main-nav">
                     <ul class="nav-list">
                         <li><a href="#services">Services</a></li>
                         <li><a href="#compare">Compare</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#sticky-section">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                     <button id="theme-toggle" aria-label="Toggle dark mode">
                         <span class="theme-icon"></span>
@@ -28,10 +32,30 @@
 
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="hero-content">
                 <h2>Compare Community Services</h2>
                 <p class="hero-subheading">Find the best service for your needs with transparent pricing and feature comparison</p>
                 <a href="#services" class="cta-button">Explore Services</a>
+            </div>
+
+            <div class="hero-illustration">
+            <svg class="w-64 h-64 text-blue-500 dark:text-blue-400" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 100 H 190 M 100 10 V 190" stroke="currentColor" stroke-width="1" opacity="0.1"/>
+                <circle cx="100" cy="100" r="10" fill="currentColor" opacity="0.8"/>                
+                <circle class="animated-ring" cx="100" cy="100" r="30" stroke="currentColor" stroke-width="2" fill="none" style="animation-delay: 0s;"/>
+                <circle class="animated-ring" cx="100" cy="100" r="60" stroke="currentColor" stroke-width="2" fill="none" style="animation-delay: -1.3s;"/>
+                <circle class="animated-ring" cx="100" cy="100" r="90" stroke="currentColor" stroke-width="2" fill="none" style="animation-delay: -2.6s;"/>
+            </svg>
+            </div>
+
+            <div class="hero-illustration2">
+            <svg class="w-64 h-64 text-blue-500 dark:text-blue-400" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 100 H 190 M 100 10 V 190" stroke="currentColor" stroke-width="1" opacity="0.1"/>
+                <circle cx="100" cy="100" r="10" fill="currentColor" opacity="0.8"/>                
+                <circle class="animated-ring" cx="100" cy="100" r="30" stroke="currentColor" stroke-width="2" fill="none" style="animation-delay: 0s;"/>
+                <circle class="animated-ring" cx="100" cy="100" r="60" stroke="currentColor" stroke-width="2" fill="none" style="animation-delay: -1.3s;"/>
+                <circle class="animated-ring" cx="100" cy="100" r="90" stroke="currentColor" stroke-width="2" fill="none" style="animation-delay: -2.6s;"/>
+            </svg>
             </div>
         </section>
 
@@ -181,11 +205,167 @@
             </div>
         </section>
 
-        <section id="faq" class="faq-section">
+        <section id="sticky-section" class="sticky-section">
+        <div class="sticky-sidebar">
+         <img src="https://i.ebayimg.com/images/g/KKAAAOSw9cNkSMRR/s-l1600.jpg" alt="Visual representation of service comparison" class="sticky-image-placeholder">
+        </div>
+        <div class="sticky-content">
+          <h2 class="section-title">The End of Lag: ApexStream and the Dawn of True Fiber</h2>
+          <p>
+           For decades, we’ve lived with digital limitations—slow uploads, pixelated video calls,
+            and the agonizing stutter of a game frozen mid-firefight. This is the legacy of copper,
+             a technology fundamentally limited by electromagnetic interference, distance decay,
+              and physics itself. But today, ApexStream is here to tell you: that era is over.
+               We don't just offer an internet connection; we deliver raw, unfiltered light.
+          </p>
+          <p>
+            The core principle of fiber optics is elegant and absolute: 
+            information travels at the speed of light through glass strands thinner than a human hair. 
+            Fiber isn't a faster pipe; it's a completely different medium, providing symmetrical speeds, 
+            unshakeable reliability, and nearly infinite scalability that old-school broadband could never match. 
+            This isn't just an upgrade; it’s a digital revolution.
+          </p>
+          <p>
+            The ApexStream Difference: Beyond Standard Fiber
+
+            Every company talks about fiber, but ApexStream engineers have spent years perfecting what we call the QuantumStream Architecture (QSA).
+             We didn't just lay glass in the ground; we reinvented how light travels and is processed at the local level.
+          </p>
+          <p>
+            1. Graphene-Enhanced Optic Core (GEOC)
+
+            While our competitors use standard silicon-based glass fiber, 
+            ApexStream utilizes proprietary Graphene-Enhanced Optic Core (GEOC) cabling. 
+            Our unique manufacturing process embeds a nanolayer of pure graphene within the cladding of the fiber strand. 
+            This graphene lattice reduces light attenuation (signal loss) by an additional 18% over any known commercial fiber. 
+            What does this mean for you?
+          </p>
+          <p>
+            Purity of Signal: Data packets arrive cleaner, faster, and require less correction, leading to virtually zero packet loss.
+
+            Distance Immunity: Whether you are 10 feet from our hub or the absolute limit of our network zone, your performance profile remains consistent.
+
+            Future-Proofing: This superior light transmission means we can push terabits of data per second over the existing infrastructure when
+             the necessary transceivers become commercially viable—no digging required.
+          </p>
+          <p>
+            2. The ApexPoint Micro-Hub Network
+
+            ApexStream’s QSA is powered by a decentralized topology featuring ApexPoint Micro-Hubs strategically placed across every neighborhood we serve.
+             These aren't just simple switches; they are intelligent, 
+             localized distribution centers running our proprietary Pulse-Shift Routing Algorithm (PSRA).
+          </p>
+          <p>
+            PSRA is an AI-driven system that constantly monitors network load and micro-delays within a 1-mile radius of your home. 
+            It dynamically redirects traffic on a sub-millisecond basis to ensure your data always takes the fastest, least congested path. 
+            If one residential spine starts to bottleneck, the PSRA automatically shifts traffic to an adjacent, 
+            underutilized wavelength, guaranteeing a consistent experience even during peak hours like 7 PM streaming spikes.
+
+            This technology eliminates the classic "last-mile problem" and ensures that the blistering speeds advertised are the speeds 
+            you actually receive, moment to moment.
+          </p>
+          <p>
+            ApexStream Performance Tiers: Welcome to the Future
+
+            We offer two revolutionary, symmetric service tiers built entirely around the capabilities of the QSA and GEOC technology,
+             ensuring pure light-speed performance:
+
+                Velocity Prime: Our foundational tier delivers symmetrical speeds of 5,000 Mbps / 5,000 Mbps (5 Gig). 
+                It comes with an 85% Dedicated Bandwidth Guarantee and a target intra-network latency of less than 1 ms, 
+                all for just $99.99 per month.
+
+                Quantum Elite: For the ultimate professional and power user, 
+                this tier provides blistering symmetrical speeds of 10,000 Mbps / 10,000 Mbps (10 Gig). 
+                Quantum Elite includes a 95% Dedicated Bandwidth Guarantee and achieves an astonishing target latency of less than 0.5 ms, 
+                available for $149.99 per month.
+
+            Note: All plans include a complimentary ApexStream Smart Modem (ASM) and a lifetime guarantee against price hikes for the term 
+            of your residency.
+          </p>
+        </div>
+      </section>
+
+        <section id="faq" class="faq-container">
             <div class="container">
                 <h3>FAQS</h3>
                 <p>Here's our most frequently asked questions with answers:</p>
             </div>
+
+            
+            <div class="faq-item" >
+                <div class="faq-question"><h4>How often is the service information updated?</h4>
+                <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer"><p>We update our service listings quarterly to ensure you have the most current information.</p></div>
+            </div>
+            
+             <div class="faq-item" >
+                <div class="faq-question"><h4>How often is the service information updated?</h4>
+                <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer"><p>We update our service listings quarterly to ensure you have the most current information.</p></div>
+            </div>
+            
+
+            <div class="faq-item" >
+                <div class="faq-question"><h4>How often is the service information updated?</h4>
+                <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer"><p>We update our service listings quarterly to ensure you have the most current information.</p></div>
+            </div>
+            
+            
+        </section>
+
+        <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h3>Gallery</h3>
+            <p class="gallery-description">
+            A look at the innovative infrastructure, technology, and community services that power your connection.
+            </p>
+
+            <div class="gallery-grid">
+            <div class="gallery-item">
+                <img data-src="https://www.nai-group.com/wp-content/uploads/2018/09/shutterstock_526546213.jpg" alt="Fiber optic lines glowing in blue light">
+            </div>
+
+            <div class="gallery-item">
+                <img data-src="https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt03b77cd3295b05b2/688a8418b9c6c0e4b855ca87/GettyImages-2183037647.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale" alt="Modern data center corridor">
+            </div>
+
+            <div class="gallery-item">
+                <img data-src="https://www.shutterstock.com/image-photo/captivating-view-blue-fiber-optic-600nw-2605283085.jpg" alt="Network cables and tech gear">
+            </div>
+
+            <div class="gallery-item">
+                <img data-src="https://img.freepik.com/free-photo/circuit-board-close-up-with-different-components_23-2149174340.jpg?semt=ais_hybrid&w=740&q=80" alt="Closeup of circuit board">
+            </div>
+
+            <div class="gallery-item">
+                <img data-src="https://technonguide.com/wp-content/uploads/2024/04/98438-800x450.jpg" alt="City skyline with fiber infrastructure">
+            </div>
+
+            <div class="gallery-item">
+                <img data-src="https://www.pacificnetworks.com/wp-content/uploads/2025/06/Optical-Cable-Tech.jpg" alt="Technician working with optical cables">
+            </div>
+
+            <div class="gallery-item">
+                <img data-src="https://www.tevelec.com/wp-content/uploads/2020/11/fiber-optic-cables-uses-1920x960.jpg" alt="Glowing globe symbolizing global internet connections">
+            </div>
+
+            <div class="gallery-item">
+                <img data-src="https://static.vecteezy.com/system/resources/thumbnails/051/582/944/small_2x/vibrant-abstract-lights-create-a-mesmerizing-flow-showcasing-a-blend-of-blue-and-yellow-hues-in-dynamic-motion-and-digital-energy-free-video.jpg" alt="Rows of high-tech data servers in a data center">
+            </div>
+
+            <div class="gallery-item">
+                <img data-src="https://aicorespot.io/wp-content/uploads/2025/02/What-Makes-Fiber-Optic-Cables-More-Secure.jpg" alt="Technician installing fiber optic cable infrastructure">
+            </div>
+
+            <div class="gallery-item">
+                <img data-src="https://img.freepik.com/free-photo/futuristic-server-room-with-computers-data-processing_53876-108058.jpg?semt=ais_hybrid&w=740&q=80" alt="Futuristic server room with digital data visuals">
+            </div>
+            </div>
+        </div>
         </section>
 
     </main>
